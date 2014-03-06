@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C30902A018C814F200070170 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C309029F18C814F200070170 /* CoreFoundation.framework */; };
+		C30902A618C814F200070170 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C30902A418C814F200070170 /* InfoPlist.strings */; };
+		C30902C018C8160E00070170 /* FWStaticFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30902B218C815DF00070170 /* FWStaticFramework.framework */; };
+		C30902C118C8160E00070170 /* libFWStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C30902B918C815ED00070170 /* libFWStaticLibrary.a */; };
+		C30902C418C8166100070170 /* FWPluginClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C30902C318C8166100070170 /* FWPluginClass.m */; };
+		C30902C718C816A300070170 /* FWFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C30902C618C816A300070170 /* FWFunction.m */; };
+		C38BD2A918C81D4D00456C6D /* FWVCWithXib.m in Sources */ = {isa = PBXBuildFile; fileRef = C38BD2A718C81D4D00456C6D /* FWVCWithXib.m */; };
+		C38BD2AA18C81D4D00456C6D /* FWVCWithXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38BD2A818C81D4D00456C6D /* FWVCWithXib.xib */; };
+		C38BD2AD18C81DAD00456C6D /* FWVCWithoutXib.m in Sources */ = {isa = PBXBuildFile; fileRef = C38BD2AC18C81DAD00456C6D /* FWVCWithoutXib.m */; };
+		C38BD2B018C81E0C00456C6D /* FWChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C38BD2AF18C81E0C00456C6D /* FWChildVC.m */; };
+		C38BD2B218C81E9600456C6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38BD2B118C81E9600456C6D /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C30902B118C815DF00070170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30902AD18C815DF00070170 /* FWStaticFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C309024C18C813D500070170;
+			remoteInfo = FWStaticFramework;
+		};
+		C30902B818C815ED00070170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30902B318C815ED00070170 /* FWStaticLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C309026A18C8148400070170;
+			remoteInfo = FWStaticLibrary;
+		};
+		C30902BA18C815ED00070170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30902B318C815ED00070170 /* FWStaticLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C309027A18C8148400070170;
+			remoteInfo = FWStaticLibraryTests;
+		};
+		C30902BC18C8160300070170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30902B318C815ED00070170 /* FWStaticLibrary.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C309026918C8148400070170;
+			remoteInfo = FWStaticLibrary;
+		};
+		C30902BE18C8160600070170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30902AD18C815DF00070170 /* FWStaticFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C309024B18C813D500070170;
+			remoteInfo = FWStaticFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C309029C18C814F200070170 /* FWPluginBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FWPluginBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C309029F18C814F200070170 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C30902A318C814F200070170 /* FWPluginBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FWPluginBundle-Info.plist"; sourceTree = "<group>"; };
+		C30902A518C814F200070170 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C30902A718C814F200070170 /* FWPluginBundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FWPluginBundle-Prefix.pch"; sourceTree = "<group>"; };
+		C30902AD18C815DF00070170 /* FWStaticFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FWStaticFramework.xcodeproj; path = ../FWStaticFramework/FWStaticFramework.xcodeproj; sourceTree = "<group>"; };
+		C30902B318C815ED00070170 /* FWStaticLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FWStaticLibrary.xcodeproj; path = ../FWStaticLibrary/FWStaticLibrary.xcodeproj; sourceTree = "<group>"; };
+		C30902C218C8166100070170 /* FWPluginClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWPluginClass.h; sourceTree = "<group>"; };
+		C30902C318C8166100070170 /* FWPluginClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWPluginClass.m; sourceTree = "<group>"; };
+		C30902C518C816A300070170 /* FWFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWFunction.h; sourceTree = "<group>"; };
+		C30902C618C816A300070170 /* FWFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWFunction.m; sourceTree = "<group>"; };
+		C38BD2A618C81D4D00456C6D /* FWVCWithXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWVCWithXib.h; sourceTree = "<group>"; };
+		C38BD2A718C81D4D00456C6D /* FWVCWithXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWVCWithXib.m; sourceTree = "<group>"; };
+		C38BD2A818C81D4D00456C6D /* FWVCWithXib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FWVCWithXib.xib; sourceTree = "<group>"; };
+		C38BD2AB18C81DAD00456C6D /* FWVCWithoutXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWVCWithoutXib.h; sourceTree = "<group>"; };
+		C38BD2AC18C81DAD00456C6D /* FWVCWithoutXib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWVCWithoutXib.m; sourceTree = "<group>"; };
+		C38BD2AE18C81E0C00456C6D /* FWChildVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWChildVC.h; sourceTree = "<group>"; };
+		C38BD2AF18C81E0C00456C6D /* FWChildVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWChildVC.m; sourceTree = "<group>"; };
+		C38BD2B118C81E9600456C6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C309029918C814F200070170 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C38BD2B218C81E9600456C6D /* UIKit.framework in Frameworks */,
+				C30902C018C8160E00070170 /* FWStaticFramework.framework in Frameworks */,
+				C30902C118C8160E00070170 /* libFWStaticLibrary.a in Frameworks */,
+				C30902A018C814F200070170 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C309029318C814F200070170 = {
+			isa = PBXGroup;
+			children = (
+				C30902B318C815ED00070170 /* FWStaticLibrary.xcodeproj */,
+				C30902AD18C815DF00070170 /* FWStaticFramework.xcodeproj */,
+				C30902A118C814F200070170 /* FWPluginBundle */,
+				C309029E18C814F200070170 /* Frameworks */,
+				C309029D18C814F200070170 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C309029D18C814F200070170 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C309029C18C814F200070170 /* FWPluginBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C309029E18C814F200070170 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C38BD2B118C81E9600456C6D /* UIKit.framework */,
+				C309029F18C814F200070170 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C30902A118C814F200070170 /* FWPluginBundle */ = {
+			isa = PBXGroup;
+			children = (
+				C30902C518C816A300070170 /* FWFunction.h */,
+				C30902C618C816A300070170 /* FWFunction.m */,
+				C30902C218C8166100070170 /* FWPluginClass.h */,
+				C30902C318C8166100070170 /* FWPluginClass.m */,
+				C38BD2A618C81D4D00456C6D /* FWVCWithXib.h */,
+				C38BD2A718C81D4D00456C6D /* FWVCWithXib.m */,
+				C38BD2A818C81D4D00456C6D /* FWVCWithXib.xib */,
+				C38BD2AB18C81DAD00456C6D /* FWVCWithoutXib.h */,
+				C38BD2AC18C81DAD00456C6D /* FWVCWithoutXib.m */,
+				C38BD2AE18C81E0C00456C6D /* FWChildVC.h */,
+				C38BD2AF18C81E0C00456C6D /* FWChildVC.m */,
+				C30902A218C814F200070170 /* Supporting Files */,
+			);
+			path = FWPluginBundle;
+			sourceTree = "<group>";
+		};
+		C30902A218C814F200070170 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C30902A318C814F200070170 /* FWPluginBundle-Info.plist */,
+				C30902A418C814F200070170 /* InfoPlist.strings */,
+				C30902A718C814F200070170 /* FWPluginBundle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C30902AE18C815DF00070170 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30902B218C815DF00070170 /* FWStaticFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C30902B418C815ED00070170 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30902B918C815ED00070170 /* libFWStaticLibrary.a */,
+				C30902BB18C815ED00070170 /* FWStaticLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C309029B18C814F200070170 /* FWPluginBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30902AA18C814F200070170 /* Build configuration list for PBXNativeTarget "FWPluginBundle" */;
+			buildPhases = (
+				C309029818C814F200070170 /* Sources */,
+				C309029918C814F200070170 /* Frameworks */,
+				C309029A18C814F200070170 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30902BF18C8160600070170 /* PBXTargetDependency */,
+				C30902BD18C8160300070170 /* PBXTargetDependency */,
+			);
+			name = FWPluginBundle;
+			productName = FWPluginBundle;
+			productReference = C309029C18C814F200070170 /* FWPluginBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C309029418C814F200070170 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = FW;
+			};
+			buildConfigurationList = C309029718C814F200070170 /* Build configuration list for PBXProject "FWPluginBundle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C309029318C814F200070170;
+			productRefGroup = C309029D18C814F200070170 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C30902AE18C815DF00070170 /* Products */;
+					ProjectRef = C30902AD18C815DF00070170 /* FWStaticFramework.xcodeproj */;
+				},
+				{
+					ProductGroup = C30902B418C815ED00070170 /* Products */;
+					ProjectRef = C30902B318C815ED00070170 /* FWStaticLibrary.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C309029B18C814F200070170 /* FWPluginBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C30902B218C815DF00070170 /* FWStaticFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework.static;
+			path = FWStaticFramework.framework;
+			remoteRef = C30902B118C815DF00070170 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C30902B918C815ED00070170 /* libFWStaticLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFWStaticLibrary.a;
+			remoteRef = C30902B818C815ED00070170 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C30902BB18C815ED00070170 /* FWStaticLibraryTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FWStaticLibraryTests.xctest;
+			remoteRef = C30902BA18C815ED00070170 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C309029A18C814F200070170 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30902A618C814F200070170 /* InfoPlist.strings in Resources */,
+				C38BD2AA18C81D4D00456C6D /* FWVCWithXib.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C309029818C814F200070170 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C38BD2AD18C81DAD00456C6D /* FWVCWithoutXib.m in Sources */,
+				C38BD2A918C81D4D00456C6D /* FWVCWithXib.m in Sources */,
+				C30902C718C816A300070170 /* FWFunction.m in Sources */,
+				C30902C418C8166100070170 /* FWPluginClass.m in Sources */,
+				C38BD2B018C81E0C00456C6D /* FWChildVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C30902BD18C8160300070170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FWStaticLibrary;
+			targetProxy = C30902BC18C8160300070170 /* PBXContainerItemProxy */;
+		};
+		C30902BF18C8160600070170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FWStaticFramework;
+			targetProxy = C30902BE18C8160600070170 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C30902A418C814F200070170 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30902A518C814F200070170 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C30902A818C814F200070170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C30902A918C814F200070170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C30902AB18C814F200070170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FWPluginBundle/FWPluginBundle-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../**",
+				);
+				INFOPLIST_FILE = "FWPluginBundle/FWPluginBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C30902AC18C814F200070170 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FWPluginBundle/FWPluginBundle-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../**",
+				);
+				INFOPLIST_FILE = "FWPluginBundle/FWPluginBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C309029718C814F200070170 /* Build configuration list for PBXProject "FWPluginBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30902A818C814F200070170 /* Debug */,
+				C30902A918C814F200070170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30902AA18C814F200070170 /* Build configuration list for PBXNativeTarget "FWPluginBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30902AB18C814F200070170 /* Debug */,
+				C30902AC18C814F200070170 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C309029418C814F200070170 /* Project object */;
+}
