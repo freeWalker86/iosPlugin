@@ -41,6 +41,12 @@ typedef long (*cFunctionPtr)(void) ;
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pluginBundleNotification:) name:@"kPluginBundleNotification" object:nil];
+}
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -182,6 +188,19 @@ typedef long (*cFunctionPtr)(void) ;
     }
 }
 
+#pragma mark - Bundle Notification
+- (void)pluginBundleNotification:(NSNotification*)notification{
+
+    NSLog(@">>>%@",notification.object);
+    static UIAlertView *alertView =  nil;
+    alertView = nil;
+    alertView = [[UIAlertView alloc] initWithTitle:nil message:@"notification frome bundle" delegate:self cancelButtonTitle:@"send back" otherButtonTitles: nil];
+    [alertView show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"kHostAppNotification" object:@"bundle value"];
+}
 
 #pragma mark - Util
 /**
