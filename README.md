@@ -7,12 +7,11 @@ Use NSBundle to implement plugin in iOS. OS X use NSBundle to implement plugin, 
 
 Project Explain
 ================
-================
 
 FWPluginBundle 
 ===============
 It is a bundle project, changed from os x bundle project by change arch, and link UIKit framework. It use static library and static framework for test, objective-C class , C Function and so on.
-FWStaticFramework,FWStaticLibrary
+FWStaticFramework FWStaticLibrary
 =================================
 
 It is a simple static framework and Library project which target used in FWPluginBundle.
