@@ -29,7 +29,6 @@ Test Features:
 *  send Notification between stub app and bundle.
 
 
-
 The MIT License
 ---------------
 Wax is Copyright (C) 2014 freeWalker86 See the file LICENSE for information of licensing and distribution.
